@@ -4,7 +4,7 @@ Meu Repositório onde colocarei Projetos e Mini-Projetos de autoria própria dur
 
 ## Projetos
 
-### Sistemas de Pontoa de Aprendizado
+### Sistemas de Pontos de Aprendizado
 Calcula progresso de estudos com base em:
 - Horas estudadas
 - Dias estudados
