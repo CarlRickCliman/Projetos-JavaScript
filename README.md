@@ -17,3 +17,4 @@ Simula uma batalha por turnos com base em:
 - Acertos e erros de ataque
 - Dano crítico
 - Determinação de vencedor após os rounds
+- Duelo com 7 Rounds
