@@ -2,40 +2,113 @@
 // LISTA DE PRESENÇA
 // ================================
 
-
-// LISTA DE ALUNOS
-let alunos = [
+let presenca = [
+    "Carlos",
+    "João",
     "Carlos",
     "Ana",
-    "Julia",
-    "Joao",
-    "Arthur",
-    "Anny",
+    "Ana",
+    "Carlos",
+    "João",
+    "Pedro",
+    "Pedro",
+    "Ana",
+    "Carlos",
 ]
 
 // ================================
 // CABEÇALHO DO RELATÓRIO
 // ================================
 
-console.log("Lista de Alunos".padEnd(25) + "Presenças:")
+console.log("RELATÓRIO DE PRESENÇA")
+console.log()
 
 // ================================
-// FUNÇÃO DE PRESENÇA POR ALUNO
+// CONTAGEM DE CARLOS
 // ================================
 
-function presenca(nome) {
-    if(nome === "Carlos") return 5 
-    else if(nome === "Ana") return 3
-    else if(nome === "Julia") return 5
-    else if(nome === "Joao") return 2
-    else if(nome === "Arthur") return 6
-    else if(nome === "Anny") return 2
+let contador = 0
+
+for (let i = 0; i < presenca.length; i++) {
+    if (presenca[i] === "Carlos") {
+        presenca.splice(i, 1)
+        i--
+        contador++
+    }
 }
 
+console.log(`Carlos compareceu à aula ${contador} vezes`)
+
 // ================================
-// LOOP DE EXIBIÇÃO
+// CONTAGEM DE ANA
 // ================================
 
-for(let i = 0; i < alunos.length; i++) { 
-    console.log(`-- ${alunos[i]} --`.padEnd(29) + presenca(alunos[i]))
+contador = 0
+
+for (let i = 0; i < presenca.length; i++) {
+    if (presenca[i] === "Ana") {
+        presenca.splice(i, 1)
+        i--
+        contador++
+    }
 }
+
+console.log(`Ana compareceu à aula ${contador} vezes`)
+
+// ================================
+// CONTAGEM DE JOÃO
+// ================================
+
+contador = 0
+
+for (let i = 0; i < presenca.length; i++) {
+    if (presenca[i] === "João") {
+        presenca.splice(i, 1)
+        i--
+        contador++
+    }
+}
+
+console.log(`João compareceu à aula ${contador} vezes`)
+
+// ================================
+// CONTAGEM DE PEDRO
+// ================================
+
+contador = 0
+
+for (let i = 0; i < presenca.length; i++) {
+    if (presenca[i] === "Pedro") {
+        presenca.splice(i, 1)
+        i--
+        contador++
+    }
+}
+
+console.log(`Pedro compareceu à aula ${contador} vezes`)
+
+// ================================
+// RESTAURAÇÃO DA LISTA
+// ================================
+
+presenca = [
+    "Carlos",
+    "João",
+    "Carlos",
+    "Ana",
+    "Ana",
+    "Carlos",
+    "João",
+    "Pedro",
+    "Pedro",
+    "Ana",
+    "Carlos",
+]
+
+// ================================
+// LISTA FINAL
+// ================================
+
+console.log()
+console.log("Lista restaurada:")
+console.log(presenca)
