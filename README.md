@@ -42,5 +42,12 @@ Simula um sistema simples de gerenciamento de estoque para uma loja. O programa 
 - Cálculo do valor individual do estoque de cada produto.
 - Contagem de produtos cadastrados.
 - Identificação de produtos com estoque zerado.
-- Exibição de mensagens diferentes para singular e plural na quantidade de produtos sem estoque.
 
+### RELATÓRIO DE BIBLIOTECA
+Simula um sistema de registro de livros de uma biblioteca com base em:
+
+- Nome, autor, categoria, quantidade, emprestado, dos livros registrados, utilizando Array de Objetos.
+- Exibição de um relatório formatado dos livros.
+- Contagem de categorias.
+- Listagem de livros emprestados.
+- Listagem de livros disponíveis.
